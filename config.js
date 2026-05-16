@@ -10,8 +10,8 @@ window.MANGO_SITE_CONFIG = {
   },
 
   contact: {
-    orderEmail: "orders@aamrafarms.com",
-    queryEmail: "mangoqueries@example.com",
+    orderEmail: "skiran869@gmail.com",
+    queryEmail: "skiran869@gmail.com",
     phoneDisplay: "+91 96420 14030",
     phoneLink: "919642014030",
     whatsappNumber: "919642014030",
