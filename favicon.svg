@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Aamra Farms">
+  <rect width="64" height="64" rx="16" fill="#12372a" />
+  <path
+    d="M34 11c10 5 17 14 16 25-1 10-9 18-19 17-10-1-17-9-17-19 0-11 8-20 20-23Z"
+    fill="#f4a51c"
+  />
+  <path d="M37 13c-2 9 1 16 10 20 2-10-1-17-10-20Z" fill="#2f6b3f" />
+  <path d="M24 39c7 4 15 3 21-4" fill="none" stroke="#7b3b12" stroke-width="4" stroke-linecap="round" />
+</svg>

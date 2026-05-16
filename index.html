@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aamra Farms | Premium Mangoes Delivered Fresh</title>
+    <meta
+      name="description"
+      content="Order premium Alphonso, Kesar, and seasonal mango boxes from Aamra Farms. Handpicked, naturally ripened, and packed for farm-fresh delivery."
+    />
+    <meta name="theme-color" content="#12372a" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="assets/images/mango-hero.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Aamra Farms home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span>
+          <strong>Aamra Farms</strong>
+          <small>Ratnagiri to your table</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <i data-lucide="menu"></i>
+        <span class="sr-only">Open navigation</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#mangoes">Mangoes</a>
+        <a href="#quality">Quality</a>
+        <a href="#delivery">Delivery</a>
+        <a href="query.html">Mango Query</a>
+        <a class="nav-cta" href="#order">Order Now</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">2026 summer harvest now open</p>
+          <h1 id="hero-title">Premium Indian mangoes, picked at peak sweetness.</h1>
+          <p class="hero-copy">
+            Naturally ripened Alphonso and Kesar mangoes, sorted by hand, packed in protective
+            produce boxes, and delivered fresh for gifting, family boxes, and weekly orders.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#order">
+              <i data-lucide="shopping-basket"></i>
+              Build My Box
+            </a>
+            <a class="button secondary" href="#quality">
+              <i data-lucide="badge-check"></i>
+              See Quality Promise
+            </a>
+          </div>
+          <dl class="harvest-stats" aria-label="Harvest highlights">
+            <div>
+              <dt>24 hr</dt>
+              <dd>Packing window</dd>
+            </div>
+            <div>
+              <dt>4.8/5</dt>
+              <dd>Customer rating</dd>
+            </div>
+            <div>
+              <dt>100%</dt>
+              <dd>Hand sorted</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Store promises">
+        <div>
+          <i data-lucide="leaf"></i>
+          <span>Carbide-free ripening</span>
+        </div>
+        <div>
+          <i data-lucide="package-check"></i>
+          <span>Protective shipping boxes</span>
+        </div>
+        <div>
+          <i data-lucide="truck"></i>
+          <span>Dispatch updates on WhatsApp</span>
+        </div>
+        <div>
+          <i data-lucide="shield-check"></i>
+          <span>Replacement support for damage</span>
+        </div>
+      </section>
+
+      <section class="section products-section" id="mangoes" aria-labelledby="products-title">
+        <div class="section-heading">
+          <p class="eyebrow">Shop the harvest</p>
+          <h2 id="products-title">Choose your mango box</h2>
+          <p>
+            Each batch is checked for aroma, firmness, color, and skin condition before packing.
+            Prices can be updated in one place in the site script.
+          </p>
+        </div>
+
+        <div class="product-grid" data-products>
+          <article class="product-card" data-product="alphonso">
+            <div class="product-image">
+              <img src="assets/images/alphonso-box.jpg" alt="Open box filled with ripe Alphonso mangoes" />
+              <span class="product-badge">Best seller</span>
+            </div>
+            <div class="product-body">
+              <div>
+                <p class="product-type">Ratnagiri Alphonso</p>
+                <h3>Premium Alphonso Box</h3>
+              </div>
+              <p>
+                Rich saffron flesh, floral aroma, and a smooth dessert finish. Ideal for family
+                gifting and special occasions.
+              </p>
+              <ul class="product-meta" aria-label="Premium Alphonso Box details">
+                <li>12 mangoes</li>
+                <li>2.8-3.2 kg</li>
+                <li>Naturally ripened</li>
+              </ul>
+              <div class="product-footer">
+                <span class="price" data-price="2199">Rs. 2,199</span>
+                <div class="quantity" aria-label="Premium Alphonso Box quantity">
+                  <button type="button" data-decrease aria-label="Decrease Premium Alphonso Box quantity">
+                    <i data-lucide="minus"></i>
+                  </button>
+                  <output data-quantity>0</output>
+                  <button type="button" data-increase aria-label="Increase Premium Alphonso Box quantity">
+                    <i data-lucide="plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="kesar">
+            <div class="product-image">
+              <img src="assets/images/kesar-crate.jpg" alt="Wooden crate overflowing with ripe Kesar mangoes" />
+              <span class="product-badge">Family pack</span>
+            </div>
+            <div class="product-body">
+              <div>
+                <p class="product-type">Gir Kesar</p>
+                <h3>Kesar Family Crate</h3>
+              </div>
+              <p>
+                Bright, sweet, and deeply fragrant mangoes selected for everyday eating,
+                milkshakes, aamras, and summer desserts.
+              </p>
+              <ul class="product-meta" aria-label="Kesar Family Crate details">
+                <li>5 kg crate</li>
+                <li>18-22 mangoes</li>
+                <li>Juicy table grade</li>
+              </ul>
+              <div class="product-footer">
+                <span class="price" data-price="1499">Rs. 1,499</span>
+                <div class="quantity" aria-label="Kesar Family Crate quantity">
+                  <button type="button" data-decrease aria-label="Decrease Kesar Family Crate quantity">
+                    <i data-lucide="minus"></i>
+                  </button>
+                  <output data-quantity>0</output>
+                  <button type="button" data-increase aria-label="Increase Kesar Family Crate quantity">
+                    <i data-lucide="plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="gift">
+            <div class="product-image">
+              <img src="assets/images/orchard-sorting.jpg" alt="Fresh mangoes being sorted into crates at an orchard" />
+              <span class="product-badge">Corporate</span>
+            </div>
+            <div class="product-body">
+              <div>
+                <p class="product-type">Curated hamper</p>
+                <h3>Harvest Gift Box</h3>
+              </div>
+              <p>
+                A polished seasonal box for clients, festivals, and celebrations with premium
+                fruit grading and clean presentation.
+              </p>
+              <ul class="product-meta" aria-label="Harvest Gift Box details">
+                <li>18 mangoes</li>
+                <li>Gift-ready pack</li>
+                <li>Custom note option</li>
+              </ul>
+              <div class="product-footer">
+                <span class="price" data-price="2899">Rs. 2,899</span>
+                <div class="quantity" aria-label="Harvest Gift Box quantity">
+                  <button type="button" data-decrease aria-label="Decrease Harvest Gift Box quantity">
+                    <i data-lucide="minus"></i>
+                  </button>
+                  <output data-quantity>0</output>
+                  <button type="button" data-increase aria-label="Increase Harvest Gift Box quantity">
+                    <i data-lucide="plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section quality-section" id="quality" aria-labelledby="quality-title">
+        <div class="quality-copy">
+          <p class="eyebrow">Quality promise</p>
+          <h2 id="quality-title">A better mango buying experience.</h2>
+          <p>
+            Great mangoes are not just picked; they are timed, rested, sorted, and packed
+            carefully. Our process protects taste, texture, and presentation from orchard to door.
+          </p>
+          <div class="quality-list">
+            <div>
+              <i data-lucide="sprout"></i>
+              <h3>Responsible ripening</h3>
+              <p>Fruit is rested naturally in controlled batches so sweetness develops without shortcuts.</p>
+            </div>
+            <div>
+              <i data-lucide="scan-search"></i>
+              <h3>Strict grading</h3>
+              <p>Every mango is checked for size, bruising, firmness, color, and aroma before boxing.</p>
+            </div>
+            <div>
+              <i data-lucide="snowflake"></i>
+              <h3>Fresh dispatch</h3>
+              <p>Orders are packed close to dispatch time with breathable protection for travel.</p>
+            </div>
+          </div>
+        </div>
+        <figure class="quality-figure">
+          <img src="assets/images/orchard-sorting.jpg" alt="Mangoes sorted into wooden crates at the orchard" />
+          <figcaption>Hand sorting keeps each box consistent.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section delivery-section" id="delivery" aria-labelledby="delivery-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Farm to door</p>
+          <h2 id="delivery-title">Simple ordering, careful delivery.</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>01</span>
+            <h3>Select your boxes</h3>
+            <p>Pick Alphonso, Kesar, gift boxes, or a mixed seasonal order.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Confirm on WhatsApp</h3>
+            <p>Send your enquiry with delivery city, date, and quantity in one tap.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Fresh packing</h3>
+            <p>Your order is sorted, rested, protected, and packed for travel.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Track dispatch</h3>
+            <p>Receive dispatch confirmation and delivery updates through WhatsApp.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section order-section" id="order" aria-labelledby="order-title">
+        <div class="order-copy">
+          <p class="eyebrow">Reserve your box</p>
+          <h2 id="order-title">Build an order enquiry.</h2>
+          <p>
+            Choose quantities above, add delivery details, and send the enquiry through WhatsApp.
+            Final availability and delivery charges are confirmed before payment.
+          </p>
+          <div class="season-note">
+            <i data-lucide="calendar-days"></i>
+            <span>Peak dispatch: April to June. Early batches sell out first.</span>
+          </div>
+        </div>
+
+        <form class="order-panel" data-order-form>
+          <div class="summary-header">
+            <h3>Your mango box</h3>
+            <button class="text-button" type="button" data-clear-cart>Clear</button>
+          </div>
+
+          <div class="cart-lines" data-cart-lines>
+            <p class="empty-cart">Select mango boxes to start your enquiry.</p>
+          </div>
+
+          <div class="order-total">
+            <span>Estimated subtotal</span>
+            <strong data-subtotal>Rs. 0</strong>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              <span>Your name</span>
+              <input name="name" type="text" autocomplete="name" placeholder="Atul Singh" />
+            </label>
+            <label>
+              <span>Delivery city</span>
+              <input name="city" type="text" autocomplete="address-level2" placeholder="Mumbai" />
+            </label>
+            <label>
+              <span>Preferred date</span>
+              <input name="date" type="date" />
+            </label>
+            <label>
+              <span>Phone</span>
+              <input name="phone" type="tel" autocomplete="tel" placeholder="+91 98765 43210" />
+            </label>
+            <label class="full">
+              <span>Note</span>
+              <textarea name="note" rows="3" placeholder="Gift note, delivery instructions, or variety preference"></textarea>
+            </label>
+          </div>
+
+          <button class="button primary wide" type="submit">
+            <i data-lucide="send"></i>
+            Send Enquiry on WhatsApp
+          </button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section testimonials-section" aria-labelledby="testimonials-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Loved by mango people</p>
+          <h2 id="testimonials-title">Sweetness that shows up in every box.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <figure>
+            <blockquote>
+              The Alphonso box was beautifully packed and every mango ripened evenly. It felt like
+              a premium gift without any waste.
+            </blockquote>
+            <figcaption>Priya M., Pune</figcaption>
+          </figure>
+          <figure>
+            <blockquote>
+              We ordered Kesar for aamras and the aroma was exactly what we wanted. The WhatsApp
+              updates made delivery easy.
+            </blockquote>
+            <figcaption>Rohan S., Mumbai</figcaption>
+          </figure>
+          <figure>
+            <blockquote>
+              The corporate hampers were clean, fresh, and on time. Clients messaged us about the
+              taste the same day.
+            </blockquote>
+            <figcaption>Neha A., Bengaluru</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="#top" aria-label="Aamra Farms home">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>
+            <strong>Aamra Farms</strong>
+            <small>Premium Indian mangoes</small>
+          </span>
+        </a>
+        <p>Fresh Alphonso, Kesar, and seasonal mango boxes for families, gifting, and teams.</p>
+      </div>
+      <address>
+        <a href="mailto:orders@aamrafarms.com">orders@aamrafarms.com</a>
+        <a href="query.html">Mango query page</a>
+        <a href="tel:+919876543210">+91 98765 43210</a>
+        <span>Ratnagiri, Maharashtra</span>
+      </address>
+    </footer>
+  </body>
+</html>

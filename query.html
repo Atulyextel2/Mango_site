@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mango Query | Aamra Farms</title>
+    <meta
+      name="description"
+      content="Ask Aamra Farms a question about mango varieties, bulk orders, ripening, delivery, or gifting."
+    />
+    <meta name="theme-color" content="#12372a" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="assets/images/mango-hero.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Aamra Farms home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span>
+          <strong>Aamra Farms</strong>
+          <small>Ratnagiri to your table</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <i data-lucide="menu"></i>
+        <span class="sr-only">Open navigation</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="index.html#mangoes">Mangoes</a>
+        <a href="index.html#quality">Quality</a>
+        <a href="index.html#delivery">Delivery</a>
+        <a href="query.html" aria-current="page">Mango Query</a>
+        <a class="nav-cta" href="index.html#order">Order Now</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="query-hero" aria-labelledby="query-title">
+        <div class="query-hero-media" aria-hidden="true"></div>
+        <div class="query-hero-overlay" aria-hidden="true"></div>
+        <div class="query-layout">
+          <div class="query-copy">
+            <p class="eyebrow">Mango support</p>
+            <h1 id="query-title">Ask us anything about your mangoes.</h1>
+            <p>
+              Send questions about varieties, ripening stage, shipping, gifting, bulk orders,
+              or custom box requirements.
+            </p>
+            <div class="query-points" aria-label="Common mango questions">
+              <span><i data-lucide="sparkles"></i> Sweetness and ripeness</span>
+              <span><i data-lucide="package-search"></i> Packing and delivery</span>
+              <span><i data-lucide="gift"></i> Gift and bulk orders</span>
+            </div>
+          </div>
+
+          <form class="query-panel" data-query-form>
+            <div class="summary-header">
+              <h2>Send a mango query</h2>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                <span>Your name</span>
+                <input name="name" type="text" autocomplete="name" placeholder="Atul Singh" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                <span>Phone</span>
+                <input name="phone" type="tel" autocomplete="tel" placeholder="+91 98765 43210" />
+              </label>
+              <label>
+                <span>City</span>
+                <input name="city" type="text" autocomplete="address-level2" placeholder="Mumbai" />
+              </label>
+              <label>
+                <span>Query topic</span>
+                <select name="topic" required>
+                  <option value="">Select a topic</option>
+                  <option>Variety recommendation</option>
+                  <option>Ripening and storage</option>
+                  <option>Delivery availability</option>
+                  <option>Bulk or corporate order</option>
+                  <option>Gift box customization</option>
+                  <option>Other mango question</option>
+                </select>
+              </label>
+              <label>
+                <span>Mango variety</span>
+                <select name="variety">
+                  <option>Not sure yet</option>
+                  <option>Alphonso</option>
+                  <option>Kesar</option>
+                  <option>Mixed box</option>
+                  <option>Gift box</option>
+                </select>
+              </label>
+              <label class="full">
+                <span>Your question</span>
+                <textarea
+                  name="message"
+                  rows="6"
+                  placeholder="Tell us what you want to know about mangoes, delivery, pricing, or gifting."
+                  required
+                ></textarea>
+              </label>
+            </div>
+
+            <button class="button primary wide" type="submit">
+              <i data-lucide="mail"></i>
+              Send Query by Email
+            </button>
+            <p class="form-status" data-query-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="index.html" aria-label="Aamra Farms home">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>
+            <strong>Aamra Farms</strong>
+            <small>Premium Indian mangoes</small>
+          </span>
+        </a>
+        <p>Fresh Alphonso, Kesar, and seasonal mango boxes for families, gifting, and teams.</p>
+      </div>
+      <address>
+        <a href="mailto:orders@aamrafarms.com">orders@aamrafarms.com</a>
+        <a href="query.html">Mango query page</a>
+        <a href="tel:+919876543210">+91 98765 43210</a>
+        <span>Ratnagiri, Maharashtra</span>
+      </address>
+    </footer>
+  </body>
+</html>
